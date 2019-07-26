@@ -3,7 +3,7 @@
         <div class="label-wrapper" @click="toggleChildren">
             <div :style="indent" :class="labelClasses">
                 <slot v-if="nodes">&#9663;</slot>
-                {{ label }}
+                <a href="#">{{ label }}</a>
             </div>
         </div>
         <section v-if="showChildren">

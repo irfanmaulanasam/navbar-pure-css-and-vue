@@ -1,7 +1,7 @@
 <template>
     <div id="sidebar">
         <div class="container">
-            <h4>testing recursive button<br/><small>(Recursive Components)</small></h4>
+            <!-- <h4>testing recursive button<br/><small>(Recursive Components)</small></h4> -->
             <div id="app">
                 <treeMenu 
                 :nodes="daftarmenu.children" 
@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 body {
     /* background-color: cyan; */
     font-family: "Open Sans", sans-serif;
@@ -37,9 +37,8 @@ body {
     font-weight: 300;
     line-height: 1em;
 }
-#app{
-    background-color: brown;
-    color: #ccc;
+a{
+    color:white;
 }
 .sidebar{
     background-color: rgb(72, 72, 72);
